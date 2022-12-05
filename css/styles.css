@@ -134,6 +134,7 @@ address {
     margin-right: auto;
     width: 1170px;
     outline: 2px solid tomato;
+    justify-items: baseline;
     
 }
 .main-nav {
@@ -155,9 +156,26 @@ address {
     text-align: center;
     letter-spacing: 0.03em;
 }
+.main-nav {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
 
-.logo-accent {
+.logo a  {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+
+.menu {
     color: var(--accent-color);
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+
 }
 
 .link {
@@ -220,7 +238,9 @@ ul {
 }
 .link-header {
     display: flex;
-background-color: tomato;
+/* background-color: tomato; */
+align-items:flex-start;
+
 }
 .link {
     display: flex;
@@ -234,11 +254,10 @@ background-color: tomato;
 .mailtel-list {
     display: flex;
 }
- .mailtel-list .link-header {
+ .mailtel-list {
     margin-right: 50px;
     padding-top: 32px;
-    padding-bottom: 32;
-
+    padding-bottom: 32px;
  }
 
 
@@ -261,15 +280,16 @@ background-color: tomato;
 
 .site-nav .section-advantege,
 .work-list,
-.container .time-composition  {
+.container,
+.time-composition  {
     margin-top: 0px;
     margin-bottom: 0px;
     /* padding-top: 0px; */
 }  
 
 
-.site-nav .title,
-.time-composition .section-subtitle {
+.title,
+.section-subtitle {
 /* .time-composition .professions { */
     margin-top: 0px;
     margin-bottom: 10px; 
@@ -323,7 +343,7 @@ color: var(--accent-color);
     list-style: none;
     text-decoration: none;
 }
-.link-header + .link-header {
+.mailtel-list li {
  margin-left: 50px;   
 }
 /* .site-nav .item + .item {
@@ -346,8 +366,8 @@ color: var(--accent-color);
     /* section */
 
 .section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 0px;
+    padding-bottom: 0px;
     }
 
 .section-advantege > p {
