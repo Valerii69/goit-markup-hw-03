@@ -9,12 +9,12 @@
   --link-address: rgba(255, 255, 255, 0.6);
   --background-color-page: var(--white-color);
 }
-  /* *,
+  *,
   *::before,
   *::after {
     box-sizing: border-box;
   
-}  */
+} 
 body {
     font-family: Roboto, sans-serif;
     background-color:var(--white-color);
@@ -70,6 +70,8 @@ address {
 /* конец Ресет */
 
 .hero-title {
+    padding-top: 200px;
+    padding-bottom: 200px;
     margin-top: 0;
     margin-bottom: 30;
     color: #FFFFFF;
@@ -123,6 +125,10 @@ address {
     /* background-color: gray; */
 }
 
+.page-header {
+    display:flex;
+    align-items: center;
+}
 .container {
     margin-left: auto;
     margin-right: auto;
@@ -130,6 +136,13 @@ address {
     outline: 2px solid tomato;
     
 }
+.main-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
 /* logo */
 
 .logo {
@@ -203,6 +216,14 @@ ul {
 } */
 .site-nav {
     display: flex;
+    align-items: center;
+}
+.link-header {
+    display: flex;
+background-color: tomato;
+}
+.link {
+    display: flex;
 }
 /* .site-nav .item {
     margin-left: 50px;
@@ -210,7 +231,17 @@ ul {
 .site-nav .item + .item {
     margin-left: 50px;
 }
- 
+.mailtel-list {
+    display: flex;
+}
+ .mailtel-list .link-header {
+    margin-right: 50px;
+    padding-top: 32px;
+    padding-bottom: 32;
+
+ }
+
+
 .site-nav .link {
     display: block;
     color: var(--title-text-color);
@@ -261,6 +292,11 @@ color: var(--accent-color);
 /* email tel list */
 .mailtel {
     display: flex;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
 }
 
 
@@ -307,8 +343,15 @@ color: var(--accent-color);
 /* .section-box h3 {
     margin-bottom: 10px; */
 
+    /* section */
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    }
 
 .section-advantege > p {
+    font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
@@ -342,6 +385,9 @@ color: var(--accent-color);
 
 .footer.logo-footer {
     color: var(--accent-color);
+}
+.page {
+    width: 1600px;
 }
 .page-footer {
     color: var(--background-color);
