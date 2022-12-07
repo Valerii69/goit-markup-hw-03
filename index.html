@@ -15,20 +15,22 @@
 </head>
 <body class="page">
 <!-- шапка сайта-->
-    <header class="container main-nav">
+    <header class="main-nav container">
+        <div  class="main-list ">
         <nav class="menu"> 
-            <a href="./іndex.html" class="logo"><span class="logo">Web</span>Studio</a>
-            <ul class="site-nav">
+            <a href="./іndex.html"class="logo"><span class="logo-accent">Web</span>Studio</a>
+            <ul class="site-nav list">
                 <li class="item"><a href="#" class="link current">Студія</a></li>
                 <li class="item"><a href="./portfolio.html" class="link">Портфоліо</a></li>
                 <li class="item"><a href="#" class="link" >Контакти</a></li>
             </ul>
           </nav>
 <!--Contacts-->    
-            <ul class="mailtel-list">
-                <li><a href="mailto:info@devstudio.com" class="link-header">info@devstudio.com</a></li>
-                <li><a href="tel:+380961111111" class="link-header">+38 096 111 11 11</a></li>
+            <ul class="mailtel-list list">
+                <li class="item"><a href="mailto:info@devstudio.com" class="link-header">info@devstudio.com</a></li>
+                <li class="item"><a href="tel:+380961111111" class="link-header">+38 096 111 11 11</a></li>
             </ul>
+        </div>
     </header>
     <main>
 <!-- Ефективні рішення для вашого бізнесу -->
@@ -48,9 +50,9 @@
                     <li class="type-title">
                         <h3 class="title">ПУНКТУАЛЬНІСТЬ</h3>
                         <p class="section-advantege">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
-                    </li>
-                    <h3 class="title">ПЛАНУВАННЯ</h3>
+                    </li>  
                     <li>
+                        <h3 class="title">ПЛАНУВАННЯ</h3>
                         <p class="section-advantege">Так само консультація з широким активом значною мірою зумовлює.</p>
                         </li>
                     <li >
@@ -64,15 +66,15 @@
         <section class="section">
             <div class="container">
              <h2 class="section-title">Чим ми займаємося</h2>
-                 <ul class="work-list">
+                 <ul class="work-list see">
                     <li>
-                        <img src="./images/Box/box1.jpg" alt="Картинка-1" width="370">
+                        <img src="./images/Box/box1.jpg" class="work-see" alt="Картинка-1" width="370">
                     </li>
                     <li>
-                        <img src="./images/Box/box2.jpg" alt="Картинка-2" width="370">
+                        <img src="./images/Box/box2.jpg" class="work-see" alt="Картинка-2" width="370">
                     </li>
                     <li>
-                        <img src="./images/Box/box3.jpg" alt="Картинка-3" width="370">
+                        <img src="./images/Box/box3.jpg" class="work-see" alt="Картинка-3" width="370">
                     </li>
                  </ul>
             </div>
@@ -82,26 +84,34 @@
         <div class="container">
          <h2 class="section-title">Наша команда</h2>
             <ul class="time-composition"> 
-                <li>
-                    <img src="./images/Foto/igor1.jpg" alt="Дем'яненко" width="270">
-                    <h3 class="section-subtitle">Ігор Дем'яненко</h3>
-                    <p lang="en" class="professions">Product Designer</p>
-                </li>
-                <li> 
-                    <img src="./images/Foto/olga2.jpg" alt="Рєпіна" width="270">
-                    <h3 class="section-subtitle">Ольга Рєпіна</h3>
-                    <p lang="en" class="professions">Frontend Developer</p>
-                </li>
-                <li>
-                    <img src="./images/Foto/mykola3.jpg" alt="Тарасов" width="270">
-                    <h3 class="section-subtitle">Микола Тарасов</h3>
-                    <p lang="en" class="professions">Marketing</p>
-                </li>
-                <li>
-                    <img src="./images/Foto/mychaylo4.jpg" alt="Єрмаков" width="270">
-                    <h3 class="section-subtitle">Михайло Єрмаков</h3>
-                    <p lang="en" class="professions">Designer</p>
-                </li>
+                <div class="humana-list">
+                    <li class="item-body">
+                        <img src="./images/Foto/igor1.jpg" alt="Дем'яненко" width="270">
+                        <h3 class="section-subtitle">Ігор Дем'яненко</h3>
+                        <p lang="en" class="professions">Product Designer</p>
+                    </li>
+                </div>
+                <div class="humana-list">
+                    <li class="item-body"> 
+                        <img src="./images/Foto/olga2.jpg" alt="Рєпіна" width="270">
+                        <h3 class="section-subtitle">Ольга Рєпіна</h3>
+                        <p lang="en" class="professions">Frontend Developer</p>
+                    </li>
+                </div>
+                <div class="humana-list">
+                    <li class="item-body">
+                        <img src="./images/Foto/mykola3.jpg" alt="Тарасов" width="270">
+                        <h3 class="section-subtitle">Микола Тарасов</h3>
+                        <p lang="en" class="professions">Marketing</p>
+                    </li>
+                </div>
+                <div class="humana-list">
+                    <li class="item-body">
+                        <img src="./images/Foto/mychaylo4.jpg" alt="Єрмаков" width="270">
+                        <h3 class="section-subtitle">Михайло Єрмаков</h3>
+                        <p lang="en" class="professions">Designer</p>
+                    </li>
+                </div>
             </ul>
         </div>
     </section>
