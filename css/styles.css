@@ -277,15 +277,18 @@ color: var(--primary-text-color);
     color: var(--white-color);
     cursor: pointer;  
 }
-.section-box {
+.project-name {
     font-family: Roboto;
-    font-size: 18px;
+    width: 700;
     line-height: 2.00;
+    -top: 0px;
+    margin-bottom: 4px;
    }
 
 
 .project-watch {
     color: var(--primary-text-color);
+    width: 400;
     font-size: 16px;
     line-height: 1.8;
     letter-spacing: 0.03em;
@@ -472,6 +475,10 @@ color: var(--accent-color);
     /* margin-bottom: 10px; */
     background-color: var(--white-color);
 }
+
+/* project */
+
+
 .project-windows {
     text-decoration: none;
     margin-top: 0px;
@@ -490,9 +497,18 @@ color: var(--accent-color);
     margin-top: 0px;
     margin-bottom: 94px;
     padding-left: 0px;
+}
 
+.project {
+    flex-basis: calc(100% - 60px/3);
+}
 
-}.container.project {
+.project-list {
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+}
+.container.project {
     margin-left: 0px;
     background-color: var();
 }
@@ -687,7 +703,7 @@ c
        
 
  }
- .button-filter {
+ /* .button-filter {
     font-family: 'Roboto';
     font-weight: 500;
     font-size: 16px;
@@ -699,9 +715,7 @@ c
     cursor: pointer;
     text-align: center;
     text-decoration: none;
-    
-
-    }
+    } */
     
 .brd {
     /* min-width: 100px; */
@@ -739,15 +753,42 @@ Width: 1px
     /* .brd {
         border: 4px  solid  var(--solid); /* Параметры границы */
     
-    /* .button-progect.container {
+    .button-progect {
+display: flex;
+    }
 
-    } */
+
+.button-filter {
+    display:inline-flex;
+    align-items: center;
+
+    /* gap: 8px; */
+    margin-right: 8px;
+    color: var(--title-text-color);
+    background-color: var(--button-background-color);
+    cursor: pointer;
+    /* margin: 6px; 22px;  */
+    font-family: inherit;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    padding: 6px 22px;
+    /* min-width: 67px; */
+    text-align: center;
+    /* drop-shadow (0px 4px 4px rgba(0, 0, 0, 0.25)) */
+    filter:drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        }
+
+/* .button-project  {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
+    box-shadom:     
+        } */
 
 .button-filter:hover, 
 .button-filter:focus {
-    color: var(--white-color) ;
+    color: var(--white-color);
     background-color: var(--accent-color);
 }
+
 
 /* .hero-button {
     display: inline-block;
@@ -757,7 +798,7 @@ Width: 1px
     margin-bottom: 200px;
 } */
 
-.button-project .button-filter + .button-filter {
+/* .button-project .button-filter + .button-filter {
     margin-left: 8px;
     align-items: center;
-}
+} */
