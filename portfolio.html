@@ -9,117 +9,119 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-        rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet"> -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+        />    
     <link rel="stylesheet" href="./css/styles.css">
     </head>
-    <body>
+    <body class="page">
 <!-- шапка сайта-->
-<header class="page-header">
-    <nav> 
-        <a href="./іndex.html" class="logo"> 
-            <span class="logo-accent ">Web</span>Studio</a>
-        <ul class="site-nav">
-            <li><a href="index.html" class="link">Студія</a></li>
-            <li><a href="#" class="link current">Портфоліо</a></li>
-            <li><a href="#" class="link">Контакти</a></li>
-        </ul>
-      </nav>
+        <header class="main-nav container">
+            <div  class="main-list">
+                <nav class="menu"> 
+                <a href="./іndex.html" class="logo"> 
+                    <a href="./іndex.html"class="logo"><span class="logo-accent">Web</span>Studio</a>
+                    <ul class="site-nav list">
+                        <li class="item"><a href="index.html" class="link">Студія</a></li>
+                        <li class="item"><a href="#" class="link current">Портфоліо</a></li>
+                        <li class="item"><a href="#" class="link">Контакти</a></li>
+                </ul>
+            </nav>
 <!--Contacts-->
-    <ul class="contacts">
-        <li><a href="mailto:info@devstudio.com" class="link-header">info@devstudio.com</a></li>
-        <li><a href="tel:+380961111111" class="link-header">+38 096 111 11 11</a></li>
-    </ul>
- </header>
+                <ul class="mailtel-list list">
+                    <li class="item"><a href="mailto:info@devstudio.com" class="link-header">info@devstudio.com</a></li>
+                    <li class="item"><a href="tel:+380961111111" class="link-header">+38 096 111 11 11</a></li>
+                </ul>
+            </div>
+         </header>
 
 <main>
     <section> 
         <h1 class="visually-hidden">Проекти</h1>
     <!--Filter -->
-<ul class="button">
-    <li><button type="button" class="button-filter">Усі</button></li>
-    <li><button type="button" class="button-filter">Веб-сайти</button></li>
-    <li><button type="button" class="button-filter">Додатки</button></li>
-    <li><button type="button" class="button-filter">Дизайн</button></li>
-    <li><button type="button" class="button-filter">Маркетинг</button></li>
+<ul class="button-progect container">
+    <li class="button-filter"><button type="button" class="button-filter">Усі</button></li>
+    <li class="button-filter"><button type="button" class="button-filter">Веб-сайти</button></li>
+    <li class="button-filter"><button type="button" class="button-filter">Додатки</button></li>
+    <li class="button-filter"><button type="button" class="button-filter">Дизайн</button></li>
+    <li class="button-filter"><button type="button" class="button-filter">Маркетинг</button></li>
 </ul>
 <!--Projects-->
-<ul>
-        <li> 
-            <a href="#" class="project-box"><img src="./images/technokriak.jpg" alt="Сайт Технокряк" width="370">
-            <h2 class="section-box">Технокряк</h2>
-            <p class="project-watch">Веб-сайт</p>
-             </a>
-        </li>
-        <li>
-            <a href="#" class="project-box"><img src="./images/postergs.jpg" alt="Постер New Orlean vs Golden Star" width="370">
-            <h2 class="section-box">Постер New Orlean vs Golden Star</h2>
-            <p class="project-watch">Дизайн</p>
-        </a>          
-        </li>
-        <li>
-            <a href="" class="project-box"><img src="./images/seafood.jpg" alt="Ресторан Seafood" width="370">
-            <h2 class="section-box">Ресторан Seafood</h2>
-            <p class="project-watch">Додаток</p>
-        </a>
-            
-        </li>
-        <li> <a href="" class="project-box"><img src="./images/primemarceting.jpg" alt="Проєкт Prime" width="370">
-            <h2 class="section-box">Проєкт Prime</h2>
-            <p class="project-watch">Маркетинг</p>
-        </a>
-            
-        </li>
-        <li>
-            <a href="" class="project-box"><img src="./images/boxes.jpg" alt="Проєкт Boxes" width="370">
-            <h2 class="section-box">Проєкт Boxes</h2>
-            <p class="project-watch">Додаток</p>
-        </a>
-            
-        </li>
-        <li> <a href="" class="project-box"><img src="./images/inspiration-borders.jpg" alt="Inspiration has no Borders" width="370">
-            <h2 class="section-box">Inspiration has no Borders</h2>
-            <p class="project-watch">Веб-сайт</p>
-        </a>
-            
-        </li>
-        <li> <a href="" class="project-box"><img src="./images/le.jpg" alt="Видання Limited Edition" width="370">
-            <h2 class="section-box">Видання Limited Edition</h2>
-            <p class="project-watch">Дизайн</p>
-        </a>
-            
-        </li>
-        <li>
-            <a href="" class="project-box"><img src="./images/labprojecт.jpg" alt="Проєкт LAB" width="370">
-            <h2 class="section-box">Проєкт LAB</h2>
-            <p class="project-watch">Маркетинг</p>
-        </a>
-         </li>
-        <li>
-            <a href="" class="project-box"><img src="./images/growingbusiness.jpg" alt="Growing Business" width="370">
-            <h2 class="section-box">Проєкт Prime</h2>
-            <p class="project-watch">Додаток</p>
-        </a>  
-        </li>
-
-</ul>
+    <ul class="project container">
+            <li class="project-windows"> 
+                <a href="#" class="project-box"><img src="./images/technokriak.jpg" alt="Сайт Технокряк" width="370">
+                <h2 class="section-box">Технокряк</h2>
+                <p class="project-watch">Веб-сайт</p>
+                </a>
+            </li>
+            <li class="project-windows">
+                <a href="#" class="project-box"><img src="./images/postergs.jpg" alt="Постер New Orlean vs Golden Star" width="370">
+                <h2 class="section-box">Постер New Orlean vs Golden Star</h2>
+                <p class="project-watch">Дизайн</p>
+            </a>          
+            </li>
+            <li class="project-windows">
+                <a href="" class="project-box"><img src="./images/seafood.jpg" alt="Ресторан Seafood" width="370">
+                <h2 class="section-box">Ресторан Seafood</h2>
+                <p class="project-watch">Додаток</p>
+                </a>
+                
+            </li>
+            <li class="project-windows"> 
+                <a href="" class="project-box"><img src="./images/primemarceting.jpg" alt="Проєкт Prime" width="370">
+                <h2 class="section-box">Проєкт Prime</h2>
+                <p class="project-watch">Маркетинг</p>
+                </a>
+            </li>
+            <li class="project-windows">
+                <a href="" class="project-box"><img src="./images/boxes.jpg" alt="Проєкт Boxes" width="370">
+                <h2 class="section-box">Проєкт Boxes</h2>
+                <p class="project-watch">Додаток</p>
+                </a>   
+            </li class="project-windows">
+            <li class="project-windows">
+                <a href="" class="project-box"><img src="./images/inspiration-borders.jpg" alt="Inspiration has no Borders" width="370">
+                <h2 class="section-box">Inspiration has no Borders</h2>
+                <p class="project-watch">Веб-сайт</p>
+                </a>
+            </li>
+            <li class="project-windows">
+                <a href="" class="project-box"><img src="./images/le.jpg" alt="Видання Limited Edition" width="370">
+                 <h2 class="section-box">Видання Limited Edition</h2>
+                  <p class="project-watch">Дизайн</p>
+                 </a>
+            </li>
+            <li class="project-windows">
+                <a href="" class="project-box"><img src="./images/labprojecт.jpg" alt="Проєкт LAB" width="370">
+                <h2 class="section-box">Проєкт LAB</h2>
+                <p class="project-watch">Маркетинг</p>
+                </a>
+            </li>
+            <li class="project-windows">
+                <a href="" class="project-box"><img src="./images/growingbusiness.jpg" alt="Growing Business" width="370">
+                <h2 class="section-box">Проєкт Prime</h2>
+                <p class="project-watch">Додаток</p>
+                </a>  
+            </li>
+    </ul>
 </section>
 </main>
     
 <footer>
 <!-- Контакты-->
 <h2 class="visually-hidden">Contacts</h2>        
-<section class="contacts-section">  
-   <a href="./іndex.html" class="footer-section"> 
-               <span class="logo-footer">Web</span>Studio</a>
-       <address class="address">
-           <p class="address"> м. Київ, пр-т Лесі Українки, 26 </p>
-               <ul class="site-address">  
-                   <li><a href="mailto:info@devstudio.com" class="link-header">info@devstudio.com</a></li>
-                   <li><a href="tel:+380961111111" class="link-header">+38 096 111 11 11</a></li>
-               </ul> 
-       </address>  
-</section>   
-</footer>
+    <section class="contacts-section">  
+        <a href="./іndex.html" class="footer-section"> 
+                    <span class="logo-footer">Web</span>Studio</a>
+            <address class="address">
+                <p class="address"> м. Київ, пр-т Лесі Українки, 26 </p>
+                    <ul class="site-address">  
+                        <li><a href="mailto:info@devstudio.com" class="link-header">info@devstudio.com</a></li>
+                        <li><a href="tel:+380961111111" class="link-header">+38 096 111 11 11</a></li>
+                    </ul> 
+            </address>  
+    </section>   
+    </footer>
 </body>
 </html>
