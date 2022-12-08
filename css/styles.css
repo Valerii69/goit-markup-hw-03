@@ -8,6 +8,7 @@
   --background-color:#2F303A;
   --link-address: rgba(255, 255, 255, 0.6);
   --background-color-page: var(--white-color);
+  --solid: #EEEEEE
 }
   /* *,
   *::before,
@@ -176,7 +177,7 @@ address {
     margin-top: 0px;
     margin-bottom: 0px;
     /* padding-bottom: 94px; */
-    width: 1170px;
+    width: 1200px;
     outline: 2px solid rgb(114, 71, 255);
     /* justify-items: center; */
     /* align-items: center; */
@@ -470,10 +471,26 @@ color: var(--accent-color);
 
 .project {
     display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 0px;
+    margin-bottom: 94px;
+    padding-left: 0px;
 
+
+}.container.project {
+    margin-left: 0px;
 }
 .project-box {
-    width: 370;
+    max-width: 370px;
+    
+}
+/.project-box a {
+    stroke: var(--solid);
+}
+.project-windows {
+   max-width: 370px;
+
 
 }
 
@@ -481,7 +498,7 @@ color: var(--accent-color);
     margin-right: 0px;
 }
    hth ma
-}
+
 
 .project-box {
     list-style: none;
@@ -650,9 +667,6 @@ color: var(--accent-color);
     align-items: center;
     justify-content:center;
 
-
-
-
     border-radius: 4px;
     padding-top: 94px;
     padding-bottom: 50px;
@@ -673,7 +687,9 @@ color: var(--accent-color);
     cursor: pointer;
     text-align: center;
     text-decoration: none;
-    pa
+    }
+    .button-progect.container {
+
     }
 
 .button-filter:hover, 
