@@ -28,6 +28,9 @@ body {
 }
 .hero {
     text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
+
 
 }
 
@@ -36,26 +39,26 @@ body {
 .contacts-section {
     padding-left: 215px;
     padding-top: 60px;
-    padding-bottom: 00px;
+    padding-bottom: 60px;
 }
 
-.logo-footer{
+/* .logo-footer{
     padding-top: 60px;
-} 
+}  */
 .address > p {
     padding-bottom: 0px;
-    padding-top: 20px;
-    margin-bottom: 0px;
+    margin-top: 20px;
+    margin-bottom: 9px;
     
 }
 .site-address {
     margin-top: 0px;
     margin-bottom: 0px;
-    padding-bottom: 60px;
+    padding-bottom: 0px;
     padding-left: 0px;
 }
 .site-address > a {
-    padding-bottom: 9px;
+    padding-bottom: 0px;
 }
 
 
@@ -101,7 +104,7 @@ address {
 /* конец Ресет */
 
 .hero-title {
-    padding-top: 200px;
+    /* padding-top: 200px; */
     padding-bottom: 30px;
     margin-top: 0px;
     margin-bottom: 00px;
@@ -129,9 +132,10 @@ address {
 .hero-button {
     display: inline-block;
     border-radius: 4px;
+    border: 1px solid transparent;
     padding: 10px 32px;
     min-width: 216px;
-    margin-bottom: 200px;
+    /* margin-bottom: 200px; */
 }
  
 .hero-button {
@@ -251,9 +255,13 @@ text-decoration: none;
 .link-header {
 text-decoration: none;
 font-size: 14px;
-line-height: 1.7;
+line-height: 1.14;
 letter-spacing: 0.03em;
 color: var(--primary-text-color);
+}
+
+.tel + .tel {
+margin-top: 9px;
 }
 
 .button {
@@ -309,9 +317,9 @@ align-self: flex-start;
 
 .section-title  {
     margin-top: 0px;
-    margin-bottom: 0px;
-    padding-top: 94px; 
-    padding-bottom: 50px;
+    margin-bottom: 50px;
+    /* padding-top: 94px;  */
+    /* padding-bottom: 50px; */
 } 
 
 .time-composition {
@@ -328,12 +336,27 @@ align-self: flex-start;
      
 }
 
+.time-composition.body {
+    display: flex;
+    flex-wrap: wrap;
+}
+.item-body {
+    width: 270px;
+    margin-left: 0px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.subsubtitle {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
 .work-list {
    display: flex;
    margin: 0px;
    padding: 0px;
    justify-content: space-between;
-   padding-bottom: 44px;
+   /* padding-bottom: 44px; */
 }
 
 .work-list.see :nth-child(3n) {
@@ -344,11 +367,10 @@ align-self: flex-start;
 .time-composition {
     margin-top: 0px;
     margin-bottom: 0px;
-    padding-bottom: 92px;
+    /* padding-bottom: 92px; */
     margin-left: 0px;
     margin-right: 0px;
     padding-left: 0px;
-
 
 }  
 
@@ -368,7 +390,7 @@ align-self: flex-start;
 }  
 .professions {
     margin-bottom: 0px;
-    padding-bottom: 30px;
+    padding-bottom: 0px;
 }
 
 .site-nav .current {
@@ -414,10 +436,10 @@ color: var(--accent-color);
 }
 .mailtel-list {
 
-    padding-top: 32px;
+    /* padding-top: 32px;
     padding-bottom: 32px;
     margin-top: 0px;
-    margin-bottom: 0px;
+    margin-bottom: 0px; */
  
     
  }
@@ -570,7 +592,7 @@ margin-top: 0px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--title-text-color);
-    padding-top: 94px;
+    /* padding-top: 94px; */
 }
 
 
@@ -579,15 +601,22 @@ margin-top: 0px;
 .section {
     padding-top: 0px;
     padding-bottom: 0px;
+    padding-top: 94px;
+    padding-bottom: 94px;
     }
-   
-
+    .section.profile {
+      padding-top: 0px; 
+    }
+    .section.team {
+        background-color: var(--page-background-color);
+      }
 
 .section-advantege {
-    padding-bottom: 0px;
-    padding-left: 0;
-    margin-bottom: 0;
-    
+   /* font-weight: 400; */
+    font-size: 14px;
+    line-height: 1.71;
+
+letter-spacing: 0.03em;
     }
     
 
@@ -623,9 +652,9 @@ margin-top: 0px;
     color: var(--accent-color);
 }
 .page {
-    width: 1600px;
+    /* width: 1600px;
     margin-left: 0px;
-    margin-left: 0px;
+    margin-left: 0px; */
 }
 .page-footer {
     color: var(--background-color);
