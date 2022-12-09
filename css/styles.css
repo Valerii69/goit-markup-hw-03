@@ -5,6 +5,7 @@
   --project-color: #EEEEEE;
   --white-color: #ffffff;
   --button-background-color: #F5F4FA;
+  --page-background-color: #F5F4FA;
   --background-color:#2F303A;
   --link-address: rgba(255, 255, 255, 0.6);
   --background-color-page: var(--white-color);
@@ -277,13 +278,6 @@ color: var(--primary-text-color);
     color: var(--white-color);
     cursor: pointer;  
 }
-.project-name {
-    font-family: Roboto;
-    width: 700;
-    line-height: 2.00;
-    -top: 0px;
-    margin-bottom: 4px;
-   }
 
 
 .project-watch {
@@ -361,14 +355,17 @@ align-self: flex-start;
 
 .time-composition {
     display: flex;
+    background-color: var(--button-background-color);
+ 
+
 }
 .humana-list {
     display: block;
     width: 270px;
-    outline: 1px solid olive;
+    /* outline: 1px solid olive; */
     margin-left: 0px;
-
-    
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+     
 }
 
 .work-list {
@@ -393,13 +390,19 @@ align-self: flex-start;
     margin-left: 0px;
     margin-right: 0px;
     padding-left: 0px;
-    background-color: var(--button-background-color) ;
+    /* background-color: var(--background-color-page); */
 
 }  
-.time-composition .humana-list + .humana-list {
+/* .time-composition .humana-list + .humana-list {
     margin-left: 30px;
-}
+} */
 
+.time-composition {
+    gap: 30px;
+}
+.item-body {
+ background-color: var(--background-color-page);
+}
 
 .title,
 .section-subtitle {
@@ -468,9 +471,9 @@ color: var(--accent-color);
     color: var(--title-text-color);
 }
 
-.time-composition {
-    background-color: var(--white-color);
-}
+/* .time-composition {
+    background-color: var(--white-color); */
+
 .type-title > p {
     /* margin-bottom: 10px; */
     background-color: var(--white-color);
@@ -480,14 +483,106 @@ color: var(--accent-color);
 
 
 .project-windows {
+    /* display: flex; */
+width: 370px;
     text-decoration: none;
     margin-top: 0px;
     margin-bottom: 0px;
     /* padding: 20px 24px; */
     margin-left: 0px;
     margin-right: 0px;
+    /* background-color: gold; */
+    /* filter:drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); */
+border: 1px solid var(--solid);
+}
+
+.project-name {
+margin: 0px;
+padding-top: 0px;
+padding-bottom: 4px;
+line-height: 2.00;
+margin-bottom: 4px;
+color: var(--title-text-color);
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+letter-spacing: 0.06em;
+   }
+
+
+
+.project-watch {
+margin: 0px;
+padding-top: 0px;
+padding-bottom: 0px;
 
 }
+/* тень на картиник!!!! */
+
+ /* .button-filter {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--title-text-color);
+    background-color: var(--button-background-color);
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    } */
+    
+    .project-box {
+        min-width: 100px; */
+        font-family: inherit;
+        appearance: none;
+        border: 0;
+        border-radius: 5px;
+        /* background: #4676d7; */
+        color: #fff;
+        /* filter:drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); */
+    }
+        /* padding: 8px 16px; */
+        /* font-size: 1rem; */
+            /* cursor: pointer
+        
+      }
+      
+      /* .brd:hover   {
+        background: #1d49aa; */
+      
+    /*   
+      .brd:focus {
+        outline-color: none; */
+       /* .project-box.brd: {
+            box-shadow: 0 4 4 0;
+            Drop shadow
+            Radius: 4px;
+            Offset: 0px, 4px;
+            rgba(0, 0, 0, 0.25);
+            Stroke: Solid
+    #EEEEEE
+    Align: Mixed
+    Width: 1px
+    
+    
+        } */
+    
+        /* .brd {
+            border: 4px  solid  var(--solid); /* Параметры границы */
+/*         
+        .button-progect {
+    display: flex;
+        } */
+
+
+/* .project-watch { */
+    /* filter:drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); */
+/* .project.brd {
+    filter:drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+} */
 
 
 .project {
@@ -501,11 +596,15 @@ color: var(--accent-color);
 
 .project {
     flex-basis: calc(100% - 60px/3);
+padding-left: 0px;
+margin-top: 0px;
 }
 
+
 .project-list {
-    margin-top: 0px;
-    margin-bottom: 0px;
+    margin: 0px;
+    padding: 20px 24px;
+    
 
 }
 .container.project {
@@ -517,13 +616,14 @@ color: var(--accent-color);
     
 }
 .project-box a {
-    border-color: var(--solid);
+    /* border-color: var(--solid); */
+    /* border-color: greenyellow; */
 }
 .project-windows {
    max-width: 370px;
 
 }
-c
+
 .project-windows .project-box + .project-box:nth-child(n3) {
     margin-right: 0px;
 }
@@ -703,59 +803,7 @@ c
        
 
  }
- /* .button-filter {
-    font-family: 'Roboto';
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.62;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--title-text-color);
-    background-color: var(--button-background-color);
-    cursor: pointer;
-    text-align: center;
-    text-decoration: none;
-    } */
-    
-.brd {
-    /* min-width: 100px; */
-    /* font-family: inherit; */
-    /* appearance: none; */
-    /* border: 0; */
-    /* border-radius: 5px; */
-    /* background: #4676d7; */
-    /* color: #fff; */
-    /* padding: 8px 16px; */
-    /* font-size: 1rem; */
-    /* cursor: pointer; */
-  }
-  
-  /* .brd:hover   {
-    background: #1d49aa; */
-  
-/*   
-  .brd:focus {
-    outline-color: none; */
-   /* .project-box.brd: {
-        box-shadow: 0 4 4 0;
-        Drop shadow
-        Radius: 4px;
-        Offset: 0px, 4px;
-        rgba(0, 0, 0, 0.25);
-        Stroke: Solid
-#EEEEEE
-Align: Mixed
-Width: 1px
 
-
-    } */
-
-    /* .brd {
-        border: 4px  solid  var(--solid); /* Параметры границы */
-    
-    .button-progect {
-display: flex;
-    }
 
 
 .button-filter {
