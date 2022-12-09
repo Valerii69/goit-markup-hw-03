@@ -366,6 +366,10 @@ align-self: flex-start;
     margin-top: 0px;
     margin-bottom: 10px; 
 }  
+.professions {
+    margin-bottom: 0px;
+    padding-bottom: 30px;
+}
 
 .site-nav .current {
     color: var(--accent-color);
