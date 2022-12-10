@@ -106,9 +106,9 @@ address {
 
 .hero-title {
     /* padding-top: 200px; */
-    padding-bottom: 30px;
+    padding-bottom: 0px;
     margin-top: 0px;
-    margin-bottom: 00px;
+    margin-bottom: 30px;
     color: #FFFFFF;
     font-weight: 900;
     font-size: 44px;
@@ -252,8 +252,14 @@ line-height: 1.14;
 letter-spacing: 0.02em;
 text-decoration: none;
 }
+/* .link-header.item {
+   
+} */
 
-
+.mailtel-list .link-header {
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
 
 .link-header {
 text-decoration: none;
@@ -262,6 +268,15 @@ line-height: 1.14;
 letter-spacing: 0.03em;
 color: var(--primary-text-color);
 }
+
+.link-footer {
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+}
+
 
 .tel + .tel {
 margin-top: 9px;
@@ -422,7 +437,7 @@ color: var(--accent-color);
     align-items: center;
 }
 
-.mailtel-list li {
+.mailtel-list li + li {
     margin-left: 50px;   
    }
 
@@ -433,11 +448,11 @@ color: var(--accent-color);
     align-items:center;
    
 }
-.mailtel-list .item + .item {
+.mailtel-list.item + .item {
     margin-left: 50px;
 
 }
-.mailtel-list {
+/* .mailtel-list { */
 
     /* padding-top: 32px;
     padding-bottom: 32px;
@@ -445,8 +460,7 @@ color: var(--accent-color);
     margin-bottom: 0px; */
  
     
- }
-
+ 
 
 
 /* Section */
@@ -614,14 +628,18 @@ margin-top: 0px;
     }
     .section.team {
         background-color: var(--page-background-color);
-      }
+    }
 
 .section-advantege {
    /* font-weight: 400; */
+    margin-bottom: 0px;
     font-size: 14px;
     line-height: 1.71;
+    letter-spacing: 0.03em;
+    letter-spacing: 0.03em;
 
-letter-spacing: 0.03em;
+
+
     }
     
 
@@ -749,7 +767,7 @@ letter-spacing: 0.03em;
     border: 1px solid transparent;
     padding: 6px 22px;
     text-align: center;
-    filter:drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    /* filter:drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); */
         }
 
 .button-item {
