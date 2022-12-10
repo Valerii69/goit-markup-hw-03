@@ -11,6 +11,7 @@
   --background-color-page: var(--white-color);
   --solid: #EEEEEE;
   --background-color-portfolio: #F5F5F5;
+  --border-color-page: #ECECEC;
 }
 
 body {
@@ -189,6 +190,7 @@ address {
     margin-bottom: 0px;
     margin-left: auto;
     align-items: normal;
+    border-bottom: 1px solid var(--border-color-page);
 
 
 }
@@ -223,6 +225,7 @@ address {
     margin-top: 0px;
     margin-bottom: 0px;
     padding-right: 15px;
+    border-bottom: 1px var(--border-color-page);
     /* margin-left:; */
 }
 
@@ -427,8 +430,8 @@ color: var(--accent-color);
 .mailtel-list {
     display: flex;
     margin-left: auto;
+    align-items:center;
    
-  
 }
 .mailtel-list .item + .item {
     margin-left: 50px;
@@ -476,17 +479,17 @@ width: 370px;
 
     margin-left: 0px;
     margin-right: 0px;
+    
 
-border: 1px solid var(--solid);
+
 }
 
 .project-name {
     font-family: 'Roboto';
-    margin: 0px;
     padding-top: 0px;
-    padding-bottom: 4px;
+    margin-bottom: 4px;
     line-height: 2.00;
-    /* margin-bottom: 4px; */
+    margin-bottom: 4px;
     font-family: Roboto;
     color: var(--title-text-color);
     font-style: normal;
@@ -494,7 +497,6 @@ border: 1px solid var(--solid);
     font-size: 18px;
     letter-spacing: 0.06em;
     }
-   
 
 
 
@@ -540,9 +542,12 @@ margin-top: 0px;
     margin: 0px;
     padding: 20px 24px;
     background-color: var(--white-color);
+    border-width: 0px 1px 1px 1px;
+    border-color: var(--solid); 
+    border-style: solid ;
     
-
 }
+
 .container.project {
     margin-left: 0px;
 
@@ -721,39 +726,39 @@ letter-spacing: 0.03em;
  .button-project {
     display: flex;
     align-items: center;
-
-    align-items: center;
     justify-content:center;
-
+    padding-left: 0px;
     border-radius: 4px;
-    padding-top: 94px;
-    padding-bottom: 34px;
-    min-width: 216px;
- 
-       
+    margin-top: 94px;
+    margin-bottom: 34px;
+    min-width: 216px;   
 
  }
+
 
 
 .button-filter {
     display:inline-flex;
     align-items: center;
-
- 
-    margin-right: 8px;
+    /* margin-right: 8px; */
     color: var(--title-text-color);
     background-color: var(--button-background-color);
     cursor: pointer;
- 
     font-family: inherit;
     border-radius: 4px;
     border: 1px solid transparent;
     padding: 6px 22px;
-    
     text-align: center;
-   
     filter:drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
         }
+
+.button-item {
+margin-right: 8px;
+}
+
+.button-item:last-child {
+    margin-right: 0;
+}      
 
 
 .button-filter:hover, 
