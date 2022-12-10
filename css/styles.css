@@ -290,7 +290,7 @@ margin-top: 9px;
 
 .project-watch {
     color: var(--primary-text-color);
-    width: 400;
+    width: 400px;
     font-size: 16px;
     line-height: 1.8;
     letter-spacing: 0.03em;
@@ -524,7 +524,7 @@ padding-bottom: 0px;
 
  
     .project-box {
-        min-width: 100px; */
+        min-width: 100px;
         font-family: inherit;
         appearance: none;
         border: 0;
@@ -599,7 +599,7 @@ margin-top: 0px;
     line-height: 2;
     letter-spacing: 0.03em;
     margin-top: 0;
-    margin-bottom: 10;
+    margin-bottom: 10px;
     color: var(--title-text-color);
 }
 
