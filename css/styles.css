@@ -32,13 +32,11 @@ body {
     padding-top: 200px;
     padding-bottom: 200px;
 
-
 }
 
  /* outline: 1px solid olive; */
 
 .contacts-section {
-    padding-left: 215px;
     padding-top: 60px;
     padding-bottom: 60px;
 }
@@ -46,10 +44,15 @@ body {
 /* .logo-footer{
     padding-top: 60px;
 }  */
-.address > p {
+.addressa .mail {
     padding-bottom: 0px;
     margin-top: 20px;
     margin-bottom: 9px;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: var(--white-color);
+
     
 }
 .site-address {
@@ -115,6 +118,9 @@ address {
     line-height: 1.36;
     text-align: center;
     letter-spacing: 0.06em;
+    max-width: 696px;
+    margin-left: auto;
+    margin-right: auto;
   
 }
 
@@ -164,23 +170,54 @@ address {
 }
 
 
+.main-list.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    /* margin-top: 0px;
+    margin-bottom: 0px; */
+    width: 1200px;
+    /* padding-top: 60px;
+    padding-bottom: 60px; */
+
+}
+
 .container {
     margin-left: auto;
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
-    margin-top: 0px;
-    margin-bottom: 0px;
+    /* margin-top: 0px;
+    margin-bottom: 0px; */
     width: 1200px;
+    /* padding-top: 60px;
+    padding-bottom: 60px; */
 
 }
+
+.container.visually {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.container.card {
+    margin-bottom: 94px;
+}
+
+/* .main-nav {
+    
+} */
 
 
 .main-nav {
     align-items: center;
     justify-content: space-between;
-
-    
+    border-bottom: 1px solid var(--border-color-page);
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-right: 15px;
+    /* margin-left:; */
 
 }
 .main-list {
@@ -190,7 +227,7 @@ address {
     margin-bottom: 0px;
     margin-left: auto;
     align-items: normal;
-    border-bottom: 1px solid var(--border-color-page);
+    /* border-bottom: 1px solid var(--border-color-page); */
 
 
 }
@@ -206,6 +243,8 @@ address {
     line-height: 1.19;
     text-align: center;
     letter-spacing: 0.03em;
+   margin-right: 93px ;
+
 }
 .logo-accent {
     color: var(--accent-color);
@@ -221,13 +260,7 @@ address {
 
 
 /* Main-nav */
-.main-nav {
-    margin-top: 0px;
-    margin-bottom: 0px;
-    padding-right: 15px;
-    border-bottom: 1px var(--border-color-page);
-    /* margin-left:; */
-}
+
 
 .menu {
     color: var(--accent-color);
@@ -266,7 +299,7 @@ text-decoration: none;
 font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.03em;
-color: var(--primary-text-color);
+color: var(--title-text-color);
 }
 
 .link-footer {
@@ -288,13 +321,6 @@ margin-top: 9px;
 }
 
 
-.project-watch {
-    color: var(--primary-text-color);
-    width: 400px;
-    font-size: 16px;
-    line-height: 1.8;
-    letter-spacing: 0.03em;
-}
 
 ul { 
     list-style: none;
@@ -303,7 +329,7 @@ ul {
 .site-nav {
     display: flex;
     align-items: center;
- margin-left: 93px; 
+ /* margin-left: 93px;  */
 
 }
 
@@ -417,7 +443,7 @@ align-self: flex-start;
 
 .site-nav.visually {
     gap: 30px;
-    margin-left: 0px;
+    padding-left: 0px;
 }
 
 
@@ -520,6 +546,16 @@ padding-top: 0px;
 padding-bottom: 0px;
 
 }
+
+.project-watch {
+    color: var(--primary-text-color);
+    /* width: 400px; */
+    font-size: 16px;
+    line-height: 1.8;
+    letter-spacing: 0.03em;
+}
+
+
 /* тень на картиник!!!! */
 
  
@@ -535,20 +571,20 @@ padding-bottom: 0px;
     }
       
 
-
 .project {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
     margin-top: 0px;
-    margin-bottom: 94px;
+    /* margin-bottom: 94px; */
     padding-left: 0px;
+    padding-left: 0px;
+    margin-bottom: 0px;
 }
 
 .project {
     flex-basis: calc(100% - 60px/3);
-padding-left: 0px;
-margin-top: 0px;
+
 }
 
 
@@ -667,6 +703,9 @@ margin-top: 0px;
     background-color: var(--button-background-color);
 }
 
+
+
+
 .footer {
     color: var(--background-color);
 }
@@ -732,6 +771,9 @@ margin-top: 0px;
     line-height: 1.19;
     text-align: center;
     letter-spacing: 0.03em;
+    /* margin-bottom: 20px; */
+
+
 }
 
 .logo-footer {
@@ -747,7 +789,8 @@ margin-top: 0px;
     justify-content:center;
     padding-left: 0px;
     border-radius: 4px;
-    margin-top: 94px;
+    /* margin-top: 94px; */
+    margin-top: 0;
     margin-bottom: 34px;
     min-width: 216px;   
 
@@ -758,7 +801,6 @@ margin-top: 0px;
 .button-filter {
     display:inline-flex;
     align-items: center;
-    /* margin-right: 8px; */
     color: var(--title-text-color);
     background-color: var(--button-background-color);
     cursor: pointer;
@@ -767,8 +809,11 @@ margin-top: 0px;
     border: 1px solid transparent;
     padding: 6px 22px;
     text-align: center;
-    /* filter:drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); */
-        }
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    letter-spacing: 0.03em;
+         }
 
 .button-item {
 margin-right: 8px;
